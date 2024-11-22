@@ -98,6 +98,7 @@
     description = "freep";
     extraGroups = [ "networkmanager" "wheel" "video"];
     packages = with pkgs; [];
+    shell = pkgs.zsh;
   };
 
   # Allow unfree packages
@@ -106,30 +107,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    helix # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    openssl
-    mpv
-    kitty
     git
-    file
-    scrot
-    autorandr
-    dunst
-    flameshot
-    feh
-    light
     python3
-    numlockx
-    ripgrep
-    bat
-    pavucontrol
-    keepass
-    jq
     # newpckg anchor for quicksearch
   ];
-  programs.firefox.enable = true;
   services.blueman.enable = true;
+  programs.zsh.enable = true;
 
   environment.variables = {
     EDITOR = "hx";
