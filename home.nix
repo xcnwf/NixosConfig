@@ -34,7 +34,6 @@
     ripgrep
     jq
     yq-go
-    eza # Modern ls
     tree
     gawk
     gnused
@@ -43,12 +42,20 @@
     bat
     openssl
 
+    # File Manager
+    nnn
+    xfce.thunar
+    ranger
+
     # Productivity
     glow
     zola
 
     # Tools
     keepass
+
+    # Editor
+    helix
 
     # Misc
     mpv
@@ -58,6 +65,8 @@
   home.shellAliases = {
     gs = "git status";
   };
+
+  programs.eza.enable = true; # Modern ls
 
   programs.git = {
     enable = true;
