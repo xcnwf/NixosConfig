@@ -55,6 +55,10 @@
     vlc
   ];
 
+  home.shellAliases = {
+    gs = "git status";
+  };
+
   programs.git = {
     enable = true;
     userName = "Enzo Petit";
@@ -67,6 +71,14 @@
   programs = {
     firefox.enable = true;
     fzf.enable = true;
+    starship.enable = true;
+    zsh = {
+      enable = true;
+      oh-my-zsh = {
+        enable = true;
+        plugins = ["git" "cp"];
+      };
+    };
   };
 
   #Let HomeManager manage itself
