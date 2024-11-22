@@ -66,6 +66,7 @@
     gs = "git status";
   };
 
+  programs.zoxide.enable = true;
   programs.eza.enable = true; # Modern ls
 
   programs.git = {
