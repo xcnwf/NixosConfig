@@ -16,6 +16,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.supportedFilesystems = ["ntfs"];
+  boot.kernelModules = ["iwlwifi"]
 
   boot.initrd.luks.devices."luks-a26d67d5-192f-4d1a-ad29-0c807690f094".device = "/dev/disk/by-uuid/a26d67d5-192f-4d1a-ad29-0c807690f094";
 
