@@ -48,10 +48,12 @@
     ranger
 
     # Productivity
-    glow
+    glow # Markdown terminal preview
     zola
+    typst
+    pandoc
 
-    # Tools
+    # Password Manager
     keepass
 
     # Editor
@@ -60,6 +62,17 @@
     # Misc
     mpv
     vlc
+
+
+    # Hacking tools
+    metasploit
+    nmap
+    sqlmap
+    burpsuite
+    psudohash
+    thc-hydra
+    bloodhound
+    arsenal
   ];
 
   home.shellAliases = {
