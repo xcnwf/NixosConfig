@@ -13,8 +13,9 @@
     pavucontrol
     kitty
     autorandr
-    light
     xss-lock
+    dunst
+    brightnessctl
   
     # Networking
     nmap
@@ -62,6 +63,9 @@
     # Misc
     mpv
     vlc
+    soulseekqt
+    samba
+    cifs-utils
 
 
     # Hacking tools
@@ -105,6 +109,7 @@
   };
 
   services.dunst.enable = true;
+  services.picom.enable = true;
 
   #Let HomeManager manage itself
   home.stateVersion = "24.05";
